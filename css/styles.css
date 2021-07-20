@@ -3,10 +3,17 @@ body {
   height: 100%;
   font-size: 1rem;
   font-family: "Poppins", sans-serif;
+  max-width: 100%;
 }
 
 .bg-default{
     background-color: #ffffff !important;
+}
+
+.navbar-brand {
+    color: #330161 !important;
+    font-size: 1rem;
+    font-weight: 500;
 }
 
 .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
@@ -15,5 +22,86 @@ body {
 
 .navbar-light .navbar-nav .nav-link {
     color: #330161;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+
+.master-heading{
+    position: relative;
+    background-color: #343a40;
+    background-image: linear-gradient( to left, rgba(0,0,0,0), #8b5fa0), url(../img/bg-master.jpg);
+    background-size: cover;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+a.btn.btn-primary.rounded-pill.cards {
+    padding: 1em 2em;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.rounded-pill {
+    border-radius: 50rem !important;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #630081;
+    border-color: #630081;
+}
+
+.btn-primary:hover {
+    text-decoration: none;
+    background-color: #ffffff78;
+    color: #330161;
+    border-color: transparent;
+}
+
+.card-section{
+    padding: 40px 50px;
+}
+
+h6.card-title {
+    padding: .5rem 1rem;
+    background-image: linear-gradient(to right, #330161,#630081);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    color: #ffffff;
+}
+
+#cards {
+    background-color: #F4F4F4;
+}
+
+.list-group-item-action:focus, .list-group-item-action:hover {
+    z-index: 1;
+    color: #495057;
+    text-decoration: none;
+    background-color: #f8f9fa;
+}
+
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: .5rem 1rem;
+    color: #212529;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+.list-group-item::after {
+    content: "\276F";
+    width: 1em;
+    height: 1em;
+    text-align: center;
+    -webkit-transition: all .35s;
+    transition: all .35s;
 }
 
