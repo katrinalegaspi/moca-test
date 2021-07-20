@@ -10,6 +10,37 @@ body {
     background-color: #ffffff !important;
 }
 
+a.nav-link {
+    float: left;
+    position: relative;
+    margin: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  a.nav-link:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    height: 3px;
+    width: 0;
+    background: transparent;
+  }
+  
+  .nav-link:after {
+    transition: width .5s ease, background-color .5s ease, left .5s ease;
+  }
+  
+  .nav-link:hover:after {
+    width: 100%;
+    left: 0;
+    background: linear-gradient(to right, #330161,#630081);
+  }
+
 .navbar-brand {
     color: #330161 !important;
     font-size: 1rem;
@@ -77,31 +108,44 @@ h6.card-title {
 
 .list-group-item-action:focus, .list-group-item-action:hover {
     z-index: 1;
-    color: #495057;
+    color: #330161;
     text-decoration: none;
-    background-color: #f8f9fa;
+    background-color: #efebf0;
 }
 
 .list-group-item {
+    font-size: 0.9rem;
     position: relative;
     display: block;
     padding: .5rem 1rem;
     color: #212529;
     text-decoration: none;
     background-color: #fff;
-    border: 1px solid rgba(0,0,0,.125);
+    border: 1px solid rgb(229 223 232);
     display: -webkit-box;
     display: flex;
     -webkit-box-pack: justify;
     justify-content: space-between;
 }
 
-.list-group-item::after {
-    content: "\276F";
-    width: 1em;
-    height: 1em;
-    text-align: center;
-    -webkit-transition: all .35s;
-    transition: all .35s;
-}
+.list-group-item:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    right: 0px;
+    transition: 0.5s;
+  }
+  
+  .list-group-item:hover{
+    padding-right: 24px;
+    padding-left:8px;
+  }
+  
+  .list-group-item:hover:after {
+    opacity: 1;
+    right: 10px;
+  }
 
+  .list-group {
+    margin-bottom: 50px;
+}
