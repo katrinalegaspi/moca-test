@@ -1,0 +1,19 @@
+html,
+body {
+  height: 100%;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.bg-default{
+    background-color: #ffffff !important;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: #330161;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #330161;
+}
+
